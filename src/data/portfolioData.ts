@@ -2,8 +2,8 @@
 // CONFIGURATION: SOCIAL PROFILES
 // Replace these placeholders with your actual public URLs
 // ==========================================
-export const GITHUB_URL = "YOUR_GITHUB_PROFILE_URL";
-export const LINKEDIN_URL = "YOUR_LINKEDIN_PROFILE_URL";
+export const GITHUB_URL = "https://github.com/workwithved12";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/vedant-lokhande-ab190a351/";
 export const EMAIL_ADDRESS = "workwithved12@gmail.com";
 export const PHONE_NUMBER = "+91 8482922271";
 
