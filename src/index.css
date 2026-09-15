@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
@@ -19,13 +20,23 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #090A0F;
+  background: #e5e5e5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f293d;
+  background: #a3a3a3;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
+  background: #737373;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #090A0F;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1f293d;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
   background: #374151;
 }
 
