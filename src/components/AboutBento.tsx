@@ -39,8 +39,8 @@ export const AboutBento = () => {
       : allSkills.filter((s) => s.category === activeCategory);
 
   const genuineHighlights = [
-    { label: "Competitive Sprints", value: "10+", detail: "Hackathons Completed" },
-    { label: "Flagship Hackathon", value: "2025", detail: "SUNHACK Participant" },
+    { label: "Development", value: "Full-Stack", detail: "AI & Data Science" },
+    { label: "Flagship Hackathon", value: "2025", detail: "SUNHACK Core Team" },
     { label: "Squad Leadership", value: "Nest", detail: "Founding Member" },
     { label: "Academic Focus", value: "MSc", detail: "Data Science Student" },
   ];
@@ -91,7 +91,7 @@ export const AboutBento = () => {
               </h3>
 
               <p className="text-neutral-600 dark:text-neutral-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
-                I am an MSc Data Science student and avid technologist who thrives in high-tempo collaborative building. From participating in <span className="font-semibold text-neutral-900 dark:text-white">SUNHACK 2025</span> (Asia's largest GenAI hackathon) to co-founding <span className="font-semibold text-neutral-900 dark:text-white">Team Nest</span> and competing in <span className="font-semibold text-neutral-900 dark:text-white">10+ hackathons</span>, I focus on turning data insights and AI models into working software.
+                I am an MSc Data Science student and avid technologist who thrives in high-tempo collaborative building. From leading technical execution at <span className="font-semibold text-neutral-900 dark:text-white">SUNHACKS 2025</span> (Asia's largest GenAI hackathon) to co-founding <span className="font-semibold text-neutral-900 dark:text-white">Team Nest</span>, I focus on turning data insights and AI models into working software.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">

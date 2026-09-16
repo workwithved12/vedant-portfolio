@@ -32,7 +32,7 @@ export const EcosystemTimeline = () => {
             </h2>
           </div>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm max-w-md leading-relaxed">
-            Real responsibilities across university flagship hackathons, collaborative builder collectives, and 10+ competitive hackathons.
+            Real responsibilities across university flagship hackathons and collaborative builder collectives.
           </p>
         </div>
 

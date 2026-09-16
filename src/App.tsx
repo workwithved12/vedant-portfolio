@@ -29,7 +29,13 @@ export function App() {
 
   return (
     <CursorProvider>
-      <div className="min-h-screen bg-[#FAF8F5] dark:bg-[#0B0C10] text-neutral-900 dark:text-neutral-100 selection:bg-amber-300 selection:text-neutral-950 transition-colors duration-300 font-sans cursor-default">
+      <div className="min-h-screen relative overflow-hidden bg-[#FAF8F5] dark:bg-[#0B0C10] text-neutral-900 dark:text-neutral-100 selection:bg-amber-300 selection:text-neutral-950 transition-colors duration-300 font-sans cursor-default">
+        {/* Attractive Rotating Background Motion */}
+        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[120vw] max-w-[1200px] max-h-[1200px] animate-spin-slow opacity-20 dark:opacity-5 pointer-events-none -z-10">
+          <div className="absolute top-0 left-1/4 w-1/2 h-1/2 bg-gradient-to-tr from-amber-500/40 via-transparent to-transparent rounded-full blur-3xl mix-blend-multiply dark:mix-blend-lighten" />
+          <div className="absolute bottom-0 right-1/4 w-1/2 h-1/2 bg-gradient-to-bl from-blue-500/20 via-transparent to-transparent rounded-full blur-3xl mix-blend-multiply dark:mix-blend-lighten" />
+        </div>
+        
         <CustomCursor />
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <main>

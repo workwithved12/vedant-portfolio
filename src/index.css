@@ -12,6 +12,30 @@
   body {
     font-family: var(--font-sans);
   }
+  
+  .dark {
+    /* Change dark yellow/amber to monochrome white/grey in dark mode */
+    --color-amber-50: #0f0f0f;
+    --color-amber-100: #1a1a1a;
+    --color-amber-200: #262626;
+    --color-amber-300: #404040;
+    --color-amber-400: #e5e5e5;
+    --color-amber-500: #ffffff;
+    --color-amber-600: #d4d4d4;
+    --color-amber-700: #a3a3a3;
+    --color-amber-800: #737373;
+    --color-amber-900: #525252;
+    --color-amber-950: #ffffff;
+  }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 25s linear infinite;
 }
 
 

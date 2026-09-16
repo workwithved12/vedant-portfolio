@@ -7,13 +7,6 @@ export const HackathonJourney = () => {
 
   const journeyMilestones = [
     {
-      title: "10+ Competitive Sprints Completed",
-      badge: "Grit & Velocity",
-      description: "Participated in 10+ competitive hackathons. Practiced rapid problem decomposition, live debugging under countdown clocks, and pitching cohesive MVPs to technical juries.",
-      cursor: "10+ BUILDS",
-      tags: ["Rapid Prototyping", "MVP Scoping", "24-48h Sprints"]
-    },
-    {
       title: "SUNHACKS 2025 Core Team & Tech Lead",
       badge: "Flagship Hackathon",
       description: "Served as Core Team Member and Tech Lead for SUNHACKS 2025 (large-scale GenAI hackathon hosted by Sandip University). Led technical operations, hackathon platform stability, and sprint execution.",
@@ -22,8 +15,8 @@ export const HackathonJourney = () => {
     },
     {
       title: "Team Nest Collaboration",
-      badge: "Core Member",
-      description: "Core member contributing to collaborative sprint team formations, peer architecture discussions, and competitive building.",
+      badge: "Founding Member",
+      description: "Founding member contributing to collaborative sprint team formations, peer architecture discussions, and competitive building.",
       cursor: "CORE MEMBER",
       tags: ["Team Nest", "Collaboration", "Community"]
     }
@@ -38,22 +31,22 @@ export const HackathonJourney = () => {
           <div>
             <div className="text-[11px] sm:text-xs font-mono uppercase tracking-[0.24em] font-semibold text-amber-600 dark:text-amber-400 mb-2 flex items-center gap-2">
               <Flame size={14} className="text-amber-500" />
-              <span>HACKATHON JOURNEY</span>
+              <span>LEADERSHIP JOURNEY</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-neutral-950 dark:text-white">
-              10+ Sprints, Zero-to-One <br />
+              Tech Leadership & <br />
               <span className="font-serif italic font-normal text-neutral-700 dark:text-neutral-300">
                 pressure-tested building.
               </span>
             </h2>
           </div>
           <p className="text-neutral-600 dark:text-neutral-400 text-sm max-w-md leading-relaxed">
-            "10+ Hackathons — Building, experimenting and collaborating under pressure."
+            "Focusing on technical leadership, experimenting and collaborating under pressure."
           </p>
         </div>
 
         {/* Milestone Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {journeyMilestones.map((m, idx) => (
             <motion.div
               key={m.title}

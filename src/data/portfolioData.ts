@@ -62,7 +62,6 @@ export const PORTFOLIO_DATA = {
 
   // Near Hero Metadata / Statistics
   heroStats: [
-    { value: "10+", label: "HACKATHONS", detail: "Competitive Sprints", cursor: "10+ BUILDS" },
     { value: "01", label: "TECH LEAD ROLE", detail: "SUNHACKS 2025", cursor: "TECH LEAD" },
     { value: "02+", label: "TECH COMMUNITIES", detail: "Team Nest & Dark Arcane", cursor: "COMMUNITY" },
     { value: "AI / GENAI", label: "CORE FOCUS", detail: "Data & Model Pipelines", cursor: "GENAI" },
@@ -73,7 +72,6 @@ export const PORTFOLIO_DATA = {
     { role: "CORE TEAM · TECH LEAD", target: "SUNHACKS 2025", cursor: "TECH LEAD" },
     { role: "CORE MEMBER", target: "TEAM NEST", cursor: "CORE MEMBER" },
     { role: "MEMBER", target: "TEAM DARK ARCANE", cursor: "MEMBER" },
-    { role: "BUILDER", target: "10+ HACKATHONS", cursor: "10+ BUILDS" },
   ],
 
   // "WHERE I BUILD" / "THE ECOSYSTEM" - Dedicated Interactive Timeline Roles
@@ -135,49 +133,12 @@ export const PORTFOLIO_DATA = {
         "Collaborative Sprint Problem Solving"
       ],
       cursorLabel: "MEMBER",
-      accentColor: "from-purple-500 to-violet-700"
-    },
-    {
-      id: "hackathons-10plus",
-      entity: "10+ HACKATHONS",
-      role: "Builder & Competitor",
-      type: "Hackathon",
-      year: "Ongoing",
-      summary: "Participated in 10+ hackathons, building, experimenting and collaborating under tight timelines. Testing ideas, failing fast, and converting problems into working software.",
-      highlights: [
-        "10+ Competitive Hackathon Sprints",
-        "Building, Experimenting & Collaborating Under Pressure",
-        "Rapid Prototyping & Zero-to-One Delivery",
-        "Cross-functional Teamwork in 24-48h Windows"
-      ],
-      cursorLabel: "10+ BUILDS",
-      accentColor: "from-emerald-500 to-teal-700"
     }
   ] as LeadershipCommunityRole[],
 
   // Distinct Hierarchical Categorization
   hierarchy: {
     achievements: [
-      {
-        id: "ach-1",
-        title: "SUNHACKS 2025",
-        roleOrCategory: "Core Team · Tech Lead",
-        hierarchyType: "ACHIEVEMENTS",
-        description: "Contributed as Core Team Member and Tech Lead to the technical execution of SUNHACKS 2025.",
-        year: "2025",
-        cursorLabel: "TECH LEAD",
-        badge: "Flagship Event"
-      },
-      {
-        id: "ach-2",
-        title: "10+ Hackathons Competed",
-        roleOrCategory: "Builder & Sprint Participant",
-        hierarchyType: "ACHIEVEMENTS",
-        description: "Participated in 10+ hackathons, building, experimenting and collaborating under tight timelines.",
-        year: "Ongoing",
-        cursorLabel: "10+ BUILDS",
-        badge: "Practical Grit"
-      }
     ] as AchievementItem[],
 
     leadership: [
