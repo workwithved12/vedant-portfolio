@@ -35,14 +35,24 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="select-none mb-6"
+            className="select-none mb-6 relative inline-block w-full"
           >
-            <h1 className="text-[3.75rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[7.5rem] xl:text-[8.5rem] font-extrabold tracking-[-0.045em] leading-[0.92] text-neutral-950 dark:text-white uppercase font-sans">
-              VEDANT <br />
-              <span className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors duration-300">
-                LOKHANDE
-              </span>
-            </h1>
+            <div className="relative inline-block">
+              <h1 className="text-[3.75rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[7.5rem] xl:text-[8.5rem] font-extrabold tracking-[-0.045em] leading-[0.92] text-neutral-950 dark:text-white uppercase font-sans">
+                VEDANT <br />
+                <span className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors duration-300">
+                  LOKHANDE
+                </span>
+              </h1>
+              
+              {/* Hello Tech Cute Cat */}
+              <div className="absolute top-4 right-0 translate-x-[110%] hidden md:flex flex-col items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                <div className="text-4xl mb-1 animate-bounce">🐱💻</div>
+                <div className="text-[10px] font-mono tracking-widest uppercase text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-white/10 px-2 py-1 rounded-full whitespace-nowrap">
+                  hello tech cute cat
+                </div>
+              </div>
+            </div>
           </motion.div>
 
           {/* Supporting Line */}
