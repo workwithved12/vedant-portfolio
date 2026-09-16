@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { PORTFOLIO_DATA } from '../data/portfolioData';
 import { SocialLink } from './SocialLinks';
 import { useCursor } from '../context/CursorContext';
+import { InteractiveCat } from './InteractiveCat';
 
 export const Hero = () => {
   const { personal, heroStats, heroRolePills } = PORTFOLIO_DATA;
@@ -14,8 +15,13 @@ export const Hero = () => {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[650px] h-[350px] bg-gradient-to-tr from-amber-500/10 via-blue-500/10 to-emerald-500/5 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute top-10 right-10 w-72 h-72 bg-amber-400/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12">
-        <div className="flex flex-col items-start max-w-5xl">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 relative">
+        {/* Large Interactive Cat on the right side */}
+        <div className="absolute right-0 bottom-10 hidden lg:block w-[400px] h-[400px] z-10">
+          <InteractiveCat />
+        </div>
+
+        <div className="flex flex-col items-start max-w-5xl relative z-20">
           
           {/* Subtitle / Category Tracker */}
           <motion.div
@@ -37,22 +43,12 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="select-none mb-6 relative inline-block w-full"
           >
-            <div className="relative inline-block">
-              <h1 className="text-[3.75rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[7.5rem] xl:text-[8.5rem] font-extrabold tracking-[-0.045em] leading-[0.92] text-neutral-950 dark:text-white uppercase font-sans">
-                VEDANT <br />
-                <span className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors duration-300">
-                  LOKHANDE
-                </span>
-              </h1>
-              
-              {/* Hello Tech Cute Cat */}
-              <div className="absolute top-4 right-0 translate-x-[110%] hidden md:flex flex-col items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
-                <div className="text-4xl mb-1 animate-bounce">🐱💻</div>
-                <div className="text-[10px] font-mono tracking-widest uppercase text-neutral-500 dark:text-neutral-400 bg-neutral-100 dark:bg-white/10 px-2 py-1 rounded-full whitespace-nowrap">
-                  hello tech cute cat
-                </div>
-              </div>
-            </div>
+            <h1 className="text-[3.75rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[7.5rem] xl:text-[8.5rem] font-extrabold tracking-[-0.045em] leading-[0.92] text-neutral-950 dark:text-white uppercase font-sans">
+              VEDANT <br />
+              <span className="text-neutral-400 dark:text-neutral-500 hover:text-neutral-950 dark:hover:text-white transition-colors duration-300">
+                LOKHANDE
+              </span>
+            </h1>
           </motion.div>
 
           {/* Supporting Line */}
