@@ -17,7 +17,7 @@ export const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 relative">
         {/* Large Interactive Cat on the right side */}
-        <div className="absolute right-0 bottom-10 hidden lg:block w-[400px] h-[400px] z-10">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:flex items-center justify-center w-[550px] h-[550px] xl:w-[650px] xl:h-[650px] z-10 pointer-events-auto">
           <InteractiveCat />
         </div>
 
